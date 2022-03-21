@@ -1,0 +1,155 @@
+@font-face {
+  font-family: VeryBerry;
+  src: url(../font/VeryBerry.ttf);
+}
+
+@font-face {
+  font-family: Eczar;
+  src: url(../font/Eczar-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Belleza;
+  src: url(../font/Belleza-Regular.ttf);
+}
+
+#bell {
+  font-family: Belleza;
+  font-size:  x-large;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #BDD4ED;
+}
+ 
+#logo {
+  height: 300px;
+  width: auto;
+}
+
+#Tit {
+  font-family: VeryBerry;
+}
+
+h1 {
+  font-family: VeryBerry;
+  color: #C0A34E;
+}
+
+h4 {
+  margin-top: -10px;
+  font-family: Belleza;
+}
+
+.titulotipos {
+  font-family: Eczar;
+  font-size: large;
+}
+
+@media (max-width: 400px) {
+  #maps {
+    width: 360px;
+  }
+
+  #bell {
+    font-size: large;
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #C0A34E; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 45px; /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+* {    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#slider{
+    overflow: hidden;
+    width: 100vw;
+}
+#slider figure{
+    position: relative;
+    width: 600%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 16.6666%;
+    float: left;
+}
+
+@keyframes slider{
+      0%{
+          left: 0;
+      }
+      15%{
+          left: 0;
+      }
+      20%{
+          left: -100%;
+      }
+      35%{
+          left: -100%;
+      }
+      40%{
+          left: -200%;
+      }
+      55%{
+          left: -200%;
+      }
+      60%{
+          left: -300%;
+      }
+      75%{
+          left: -300%;
+      }
+      80%{
+          left: -400%;
+      }
+      95%{
+          left: -400%;
+      }
+      100%{
+          left: -500%;
+      }
+}
+
+a {
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: #C0A34E !important;
+}
+
+footer {
+  background-color: #88DBDF !important;
+}
